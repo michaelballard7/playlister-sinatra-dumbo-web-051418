@@ -8,5 +8,5 @@ ActiveRecord::Base.establish_connection(
   :database => "db/#{ENV['SINATRA_ENV']}.sqlite"
 )
 
-require_all 'app'
+require_all 'app' # becuase of this I dont have to use require the controllers inside of config.ru
 require_all 'lib'
